@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Functionally Dysfunctional | Coding With Lewis | Hackathon | Soham Datta</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" value="CodingWithLewis" name="username" required>
+                </div>
+                <button type="submit">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="modal">
+        <div class="modal-content">
+            <p><b>Do you pinky promise this is your account?</b></p>
+            <small>Don't worry! We trust you! 😉</small>
+            <div class="target-area" id="targetArea">
+                <img src="./assets/pinky-left.png" alt="pinky-left">
+            </div>
+            <div class="target-area-confirmed hidden" id="targetAreaConfirmed">
+                <img src="./assets/heart.png" alt="heart">
+            </div>
+            <button id="confirmContinueButton" disabled>Continue</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </div>
+    <img src="./assets/pinky-right.png" alt="pinky-right" id="customCursor" class="cursor-follow" style="display:none;">
+
+    <script src="./script.js"></script>
+</body>
+</html>

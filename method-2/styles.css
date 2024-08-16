@@ -1,4 +1,3 @@
-/* Import Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -20,6 +19,7 @@ body {
 
 .login-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -27,12 +27,24 @@ body {
     padding: 20px;
 }
 
-.login-form {
+.random-user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.login-form,
+.random-user-container {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
+    text-align: center;
 }
 
 .login-form h1 {
@@ -41,8 +53,28 @@ body {
     color: #333;
 }
 
+.random-user-container h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.random-user-container span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.random-user-container i {
+    font-size: 50px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
 .input-group {
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .input-group label {
@@ -73,6 +105,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -81,12 +114,12 @@ button:hover {
 
 .error-message {
     padding: 20px;
-    color: #000;
+    color: #eb0f0f;
     font-size: 14px;
     margin-top: 10px;
     display: flex;
-    align-items: centers;
-    background-color: #fff3cd;
+    align-items: center;
+    background: #f8d7da;
 }
 
 .hidden {
@@ -94,10 +127,9 @@ button:hover {
 }
 
 .error-message i {
+    color: #eb0f0f;
     margin-right: 5px;
-    color: #856404;
 }
-
 
 .or-option {
     text-align: center;
@@ -137,4 +169,25 @@ button:hover {
 
 #feelingLuckyButton i {
     margin-right: 10px;
+}
+
+.random-user-container button {
+    margin-top: 10px;
+}
+
+.random-user-container #continueButton {
+    background-color: #007bff;
+}
+
+.random-user-container #continueButton:hover {
+    background-color: #0056b3;
+}
+
+.random-user-container #goBackButton {
+    color: #007bff;
+    background-color: #c9e4ff;
+}
+
+.random-user-container #goBackButton:hover {
+    background-color: #b6d4f5;
 }
