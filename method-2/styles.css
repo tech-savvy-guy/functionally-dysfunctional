@@ -1,0 +1,140 @@
+/* Import Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    padding: 20px;
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    align-items: centers;
+    background-color: #fff3cd;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message i {
+    margin-right: 5px;
+    color: #856404;
+}
+
+
+.or-option {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.divider hr {
+    flex: 1;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    height: 1px;
+}
+
+.divider span {
+    padding: 0 10px;
+    background-color: #fff; 
+    white-space: nowrap;
+}
+
+#feelingLuckyButton {
+    margin-top: 10px;
+    color: #007bff;
+    background-color: #c9e4ff;
+}
+
+#feelingLuckyButton:hover {
+    background-color: #b6d4f5;
+}
+
+#feelingLuckyButton i {
+    margin-right: 10px;
+}
